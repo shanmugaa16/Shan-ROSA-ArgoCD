@@ -1,0 +1,15 @@
+namespace: nginx-namespace
+replicaCount: 2
+image:
+  repository: nginx
+  tag: "1.21"
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 80
+storage:
+  size: 5Gi
+secrets:
+  APP_KEY: MySecretKey123
+config:
+  WELCOME_MSG: "Welcome to NGINX on ROSA!"
