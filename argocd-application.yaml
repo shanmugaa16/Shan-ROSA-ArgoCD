@@ -8,7 +8,7 @@ spec:
     namespace: {{ .Values.namespace }}
     server: https://kubernetes.default.svc
   source:
-    repoURL: 'https://github.com/frendzprasath/ROSA-ArgoCD-Assessment.git'
+    repoURL: 'https://github.com/shanmugaa16/Shan-ROSA-ArgoCD.git'
     path: charts/nginx-app
     targetRevision: HEAD
   project: default
